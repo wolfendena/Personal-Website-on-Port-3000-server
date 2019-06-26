@@ -4,6 +4,8 @@ const app = express();
 //adding middleware
 app.set("view engine", "ejs"); //setting up templating engine
 
+app.use(express.static('./public'));
+
 app.get('/Personal', function(req, res) {
     res.render('Personal.ejs');
 });
