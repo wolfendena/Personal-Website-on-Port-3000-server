@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 //adding middleware
-app.set("view engine", "ejs"); //setting up templating engine
+app.set("Website engine", "ejs"); //setting up templating engine
 
 app.get('/home', function(req, res) {
     res.render('home');
